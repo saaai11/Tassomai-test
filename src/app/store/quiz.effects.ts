@@ -41,7 +41,6 @@ export class QuizEffects {
     return this.actions$.pipe(
       ofType(postAnswer),
       switchMap((action) => {
-        console.log(action, 'action');
         return this.quizService.PostQuestions(
           action.answer,
           action.questionNumber
@@ -49,15 +48,12 @@ export class QuizEffects {
       }),
       map((response) => {
         try {
-          console.log(response, 'try');
-
           if (response.status == 400) {
             return postAnswerFailure();
           }
 
           return postAnswerSuccess({ questions: response });
         } catch (error) {
-          console.log(error, 'err');
           return postAnswerFailure();
         }
       })

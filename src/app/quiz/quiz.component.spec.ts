@@ -4,23 +4,27 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { QuizComponent } from './quiz.component';
+import { QuizService } from '../services/quiz.service';
+import { By } from '@angular/platform-browser';
 
-fdescribe('QuizComponent', () => {
+describe('QuizComponent', () => {
   let component: QuizComponent;
   let fixture: ComponentFixture<QuizComponent>;
+  let service: QuizService;
   let store: MockStore;
   const initialState = {};
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [QuizComponent],
       imports: [RouterTestingModule, HttpClientTestingModule],
-      providers: [provideMockStore({ initialState })],
+      providers: [provideMockStore({ initialState }), QuizService],
     }).compileComponents();
   });
 
   beforeEach(() => {
     store = TestBed.inject(MockStore);
 
+    service = TestBed.get(QuizService);
     fixture = TestBed.createComponent(QuizComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -37,7 +41,6 @@ fdescribe('QuizComponent', () => {
   it('should check if content is showing true in header', () => {
     const element =
       fixture.debugElement.nativeElement.querySelector('.content');
-    console.log(element.textContent, 'lkjhgfdfghjklkjhg');
     expect(element.textContent).toEqual('The quiz contains 8 questions');
   });
 });

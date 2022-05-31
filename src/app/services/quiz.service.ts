@@ -45,11 +45,8 @@ export class QuizService {
   }
 
   public PostQuestions(answer: Answering, questionNumber: number) {
-    console.log(questionNumber % 3, '33');
     if (questionNumber % 3 == 0) {
       this.answerUrl = 'http://localhost:3000/answers';
-
-      console.log(`${this.answerUrl}`, 'postQuestion');
 
       return this.httpClient
         .post<any>(`${this.answerUrl}`, questionNumber)
@@ -58,16 +55,12 @@ export class QuizService {
             return response;
           }),
           catchError((error) => {
-            console.log(error, 'ees');
             return of(error);
           })
         );
     } else {
-      console.log(`${this.answerUrl}`, 'postQuestion');
-
       return this.httpClient.post<any>(`${this.answerUrl}`, answer).pipe(
         map((response) => {
-          console.log(response, 'ees');
           return response;
         })
       );
@@ -76,7 +69,6 @@ export class QuizService {
 
   navigateToNextQuestion() {
     this.quizId = this.quizId + 1;
-    console.log(this.quizId, 'ide');
     this.router.navigate(['/quiz', this.quizId]).then();
     //this.resetAll();
   }

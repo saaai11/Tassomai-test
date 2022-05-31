@@ -56,8 +56,6 @@ export class QuestionsComponent implements OnInit {
 
     this.getQuestions();
     this.failedquestions$.subscribe((questions: Question[]) => {
-      console.log(questions, ";lgcxzxcvbjkl;'");
-
       this.failedquestions = questions;
     });
   }
@@ -68,26 +66,12 @@ export class QuestionsComponent implements OnInit {
     });
   }
 
-  checkAnswer(index: number, questionId: number) {
-    console.log(index, questionId, 'answer');
-
-    let answer: Answering = {
-      questionId: questionId,
-      answerIndex: index,
-    };
-
-    this.store.dispatch(
-      postAnswer({
-        answer: answer,
-        questionNumber: questionId,
-      })
-    );
+  openSnackBar(index: number, questionId: number) {
     let isFailure$ = this.store.pipe(select(isFailure));
     let message;
 
     setTimeout(() => {
       isFailure$.subscribe((answer) => {
-        console.log(answer, 't/f');
         if (answer == true) {
           if (index === this.questionsList[questionId].answerIndex) {
             message = 'The answer is correct!!';
@@ -103,6 +87,22 @@ export class QuestionsComponent implements OnInit {
     }, 500);
 
     this.currentQuestion++;
+  }
+
+  checkAnswer(index: number, questionId: number) {
+    let answer: Answering = {
+      questionId: questionId,
+      answerIndex: index,
+    };
+
+    this.store.dispatch(
+      postAnswer({
+        answer: answer,
+        questionNumber: questionId,
+      })
+    );
+
+    this.openSnackBar(index, questionId);
   }
   restart() {
     this.router.navigate(['./quiz']);

@@ -50,15 +50,12 @@ export const quizReducer = createReducer(
     };
   }),
   on(loadQuestionsSuccess, (state, action) => {
-    console.log(action.questions, 'qsacts');
     return {
       ...state,
       questions: action.questions,
     };
   }),
   on(postAnswer, (state, action) => {
-    // if(action.)
-
     return {
       ...state,
       currentQuestion: action.questionNumber,
@@ -66,12 +63,9 @@ export const quizReducer = createReducer(
     };
   }),
   on(postAnswerSuccess, (state, action) => {
-    console.log(state.questions, 'qsacts');
-
     let newList = [...state.questions];
     let currentIndex = state.currentQuestion;
 
-    console.log(state.answer, state.questions[currentIndex], 'aaaas');
     let updatedScore = state.score;
     if (state.answer) {
       if (
@@ -98,14 +92,11 @@ export const quizReducer = createReducer(
         updatedScore = updatedScore - 1;
       }
     }
-    console.log(currentIndex, 'curr');
     let item = newList.slice(currentIndex, currentIndex + 1);
 
     item.forEach((value) => {
       newList.splice(currentIndex + 2, 0, value);
     });
-
-    console.log(newList, 'mewlist');
 
     return {
       ...state,
