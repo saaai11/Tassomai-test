@@ -1,0 +1,122 @@
+:host {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .card {
+    background-color: #e8bc12;
+    height: 100%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e8bc12;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    background: aliceblue;
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    height: 50%;
+  }
+  .final-score {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  .congrats {
+    font-size: 33px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+  }
+
+  .reset {
+    width: 80px;
+    height: 30px;
+    background-color: #e8bc12;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+  }
+  .container {
+    background-color: #e8bc12;
+    height: 100%;
+  }
+
+  .question-id {
+    color: cadetblue;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .main-content {
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 500px;
+    width: 80%;
+    padding: 10px 0 20px;
+    margin: 0 auto;
+  }
+  .question {
+    font-size: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 700;
+    margin: 10px 0;
+    height: 65px;
+    width: 90%;
+    align-items: center;
+    margin: 20px auto 40px;
+    line-height: 32px;
+    text-align: center;
+
+    font-family: monospace;
+  }
+  .answers {
+    border: 1px solid rgb(173, 167, 167);
+    line-height: 30px;
+    padding: 5px;
+  }
+  .answers:nth-child(3) {
+    border-bottom: none;
+  }
+  .selected-option {
+    border: 1px solid rgb(109, 154, 206);
+    background-color: rgb(109, 154, 206);
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  .option {
+    border: 1px solid #f4e4e4;
+    width: 70%;
+    height: 43px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 4px;
+    border-left: none;
+    font-family: monospace;
+  }
+  span {
+    background-color: #919ab5;
+    height: 100%;
+    width: 12px;
+    margin-right: 12px;
+    border: 1px solid #919ab5;
+  }
+  .option:hover {
+    border: 2px solid rgb(149, 229, 240);
+    background-color: rgb(149, 229, 240);
+    border-left: none;
+  }
+}

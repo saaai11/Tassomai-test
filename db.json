@@ -1,0 +1,550 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is .subscribe",
+      "answers": [
+        "Both",
+        "Streams data asynchronously",
+        "Streams data synchronously",
+        "None"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 2,
+      "text": "Which keyword allows us to share information between files in TypeScript?",
+      "answers": [
+        "export",
+        "import",
+        "aync",
+        "constructor"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 3,
+      "text": "Which of the following is NOT a type used in TypeScript?",
+      "answers": [
+        "enum",
+        "number",
+        "string",
+        "boolean"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 4,
+      "text": "Which is NOT an access modifier?",
+      "answers": [
+        "async",
+        "private",
+        "protected",
+        "public"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 5,
+      "text": "Observables help you manage . . . . . . . . data.",
+      "answers": [
+        "synchronous",
+        "asynchronous",
+        "Both asynchronous & synchronous",
+        "None of above"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 6,
+      "text": "Which of the following is not built-in pipe in Angular?",
+      "answers": [
+        "DatePipe",
+        "CurrencyPipe",
+        "Data Pipe",
+        "PercentPipe"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 7,
+      "text": " What is the decorator used for configuring your module class?",
+      "answers": [
+        "@NgAngular",
+        "@NgModule",
+        "@NgApp",
+        "None of above"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 8,
+      "text": "Which of the following is not a feature of Angular 2?",
+      "answers": [
+        "Modules",
+        "Multithreading",
+        "Services",
+        "Typescript"
+      ],
+      "answerIndex": 1
+    }
+  ],
+  "answers": [
+    {
+      "id": 1
+    },
+    {
+      "questionId": 0,
+      "answerIndex": 0,
+      "id": 2
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 1,
+      "id": 3
+    },
+    {
+      "questionId": 3,
+      "answerIndex": 0,
+      "id": 4
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 2,
+      "id": 5
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 2,
+      "id": 6
+    },
+    {
+      "questionId": 6,
+      "answerIndex": 1,
+      "id": 7
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 1,
+      "id": 8
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 0,
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "questionId": 0,
+      "answerIndex": 0,
+      "id": 11
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 12
+    },
+    {
+      "questionId": 3,
+      "answerIndex": 0,
+      "id": 13
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 14
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 2,
+      "id": 15
+    },
+    {
+      "questionId": 6,
+      "answerIndex": 2,
+      "id": 16
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 1,
+      "id": 17
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 1,
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 24
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 28
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 29
+    },
+    {
+      "questionId": 3,
+      "answerIndex": 0,
+      "id": 30
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 34
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 35
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 36
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 0,
+      "id": 37
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 2,
+      "id": 38
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 2,
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 42
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 43
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 44
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 0,
+      "id": 45
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 2,
+      "id": 46
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 2,
+      "id": 47
+    },
+    {
+      "questionId": 10,
+      "answerIndex": 1,
+      "id": 48
+    },
+    {
+      "questionId": 11,
+      "answerIndex": 1,
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 1,
+      "id": 54
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 2,
+      "id": 55
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 2,
+      "id": 56
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 0,
+      "id": 57
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 1,
+      "id": 58
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 1,
+      "id": 59
+    },
+    {
+      "questionId": 10,
+      "answerIndex": 2,
+      "id": 60
+    },
+    {
+      "questionId": 11,
+      "answerIndex": 1,
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 64
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 65
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 66
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 0,
+      "id": 67
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 0,
+      "id": 68
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 0,
+      "id": 69
+    },
+    {
+      "questionId": 10,
+      "answerIndex": 0,
+      "id": 70
+    },
+    {
+      "questionId": 11,
+      "answerIndex": 0,
+      "id": 71
+    },
+    {
+      "id": 72
+    },
+    {
+      "id": 73
+    },
+    {
+      "id": 74
+    },
+    {
+      "id": 75
+    },
+    {
+      "id": 76
+    },
+    {
+      "id": 77
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 1,
+      "id": 78
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 1,
+      "id": 79
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 1,
+      "id": 80
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 1,
+      "id": 81
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 1,
+      "id": 82
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 1,
+      "id": 83
+    },
+    {
+      "questionId": 10,
+      "answerIndex": 0,
+      "id": 84
+    },
+    {
+      "questionId": 11,
+      "answerIndex": 1,
+      "id": 85
+    },
+    {
+      "id": 86
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 0,
+      "id": 87
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 0,
+      "id": 88
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 0,
+      "id": 89
+    },
+    {
+      "id": 90
+    },
+    {
+      "id": 91
+    },
+    {
+      "id": 92
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 1,
+      "id": 93
+    },
+    {
+      "id": 94
+    },
+    {
+      "id": 95
+    },
+    {
+      "questionId": 1,
+      "answerIndex": 2,
+      "id": 96
+    },
+    {
+      "questionId": 2,
+      "answerIndex": 2,
+      "id": 97
+    },
+    {
+      "questionId": 4,
+      "answerIndex": 2,
+      "id": 98
+    },
+    {
+      "questionId": 5,
+      "answerIndex": 2,
+      "id": 99
+    },
+    {
+      "questionId": 7,
+      "answerIndex": 2,
+      "id": 100
+    },
+    {
+      "questionId": 8,
+      "answerIndex": 2,
+      "id": 101
+    },
+    {
+      "questionId": 10,
+      "answerIndex": 2,
+      "id": 102
+    },
+    {
+      "questionId": 11,
+      "answerIndex": 2,
+      "id": 103
+    },
+    {
+      "id": 104
+    }
+  ]
+}

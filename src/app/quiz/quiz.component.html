@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="container">
+    <h1 class="header">Welcome to Angular and Typescript quiz</h1>
+    <div class="content">The quiz contains 8 questions</div>
+    <div class="content">Each question contains 4 multiple choice answers</div>
+    <div class="content">You can only choose a maximum of 1 answer</div>
+    <div class="content">
+      For every correct answer, you will be awarded a point
+    </div>
+    <div class="content">
+      Your score will be presented to you at the end of the quiz
+    </div>
+    <div>
+      <button (click)="start()" class="btn">Start</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

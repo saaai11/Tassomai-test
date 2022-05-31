@@ -1,0 +1,39 @@
+:host {
+  .card {
+    background-color: #e8bc12;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8bc12;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    background: aliceblue;
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    height: 50%;
+  }
+  .header {
+    font-weight: 700;
+  }
+  .content {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  .btn {
+    width: 80px;
+    height: 30px;
+    background-color: #e8bc12;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+  }
+}

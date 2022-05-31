@@ -1,0 +1,33 @@
+<div class="card">
+  <div
+    class="main"
+    *ngIf="questionsList.length == currentQuestion; else defaultTemplate"
+  >
+    <div class="congrats">Congratulations!</div>
+    <p class="complete">You have successfully completed the test</p>
+    <div class="final-score">The final score is {{ fetchScore$ | async }}</div>
+    <div class="restart">Would you like to Restart?</div>
+
+    <button class="reset" (click)="restart()">Reset</button>
+  </div>
+</div>
+
+<ng-template #defaultTemplate>
+  <div class="container">
+    <div class="main-content">
+      <div class="question-id"></div>
+
+      <div class="question">{{ questionsList[currentQuestion]?.text }}</div>
+      <div
+        *ngFor="
+          let option of questionsList[currentQuestion]?.answers;
+          let i = index
+        "
+        (click)="checkAnswer(i, currentQuestion)"
+        class="options"
+      >
+        <div class="option"><span></span> {{ option }}</div>
+      </div>
+    </div>
+  </div>
+</ng-template>

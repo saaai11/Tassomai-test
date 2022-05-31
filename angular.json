@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a47ba04b-9fa4-4a15-a29f-90398c95e197"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Thrive-test": {
+    "Tassomai": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,17 +23,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Thrive-test",
+            "outputPath": "dist/Tassomai",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Thrive-test:build:production"
+              "browserTarget": "Tassomai:build:production"
             },
             "development": {
-              "browserTarget": "Thrive-test:build:development"
+              "browserTarget": "Tassomai:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Thrive-test:build"
+            "browserTarget": "Tassomai:build"
           }
         },
         "test": {
@@ -94,11 +95,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "Thrive-test"
+  "defaultProject": "Tassomai"
 }
